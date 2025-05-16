@@ -78,8 +78,21 @@ while chon != socauhoi+1:
         print('Số lần xuất hiện của ký tự ',kytu, 'trong chuỗi là',dem)
     
     elif chon==8:
-        soa=int(input("số kWh mà bạn tiêu thụ là :"))
-
+        soa=float(input("số kWh mà bạn tiêu thụ là :"))
+        sotienphaitra=0
+        if soa>=0 and soa<=50 :
+            sotienphaitra=1,678*soa
+        elif soa>=51 and soa<=100 :
+            sotienphaitra=1,734*soa
+        elif soa>=101 and soa<=200 :
+            sotienphaitra=2,14*soa
+        elif soa>=201 and soa<=300 :
+            sotienphaitra=2,536*soa
+        elif soa>=301 and soa<=400 :
+            sotienphaitra=2,834*soa
+        elif soa>400 :
+            sotienphaitra=2,927*soa
+        print("sốn tiền bản phải trả là",sotienphaitra,"vnd")
     elif chon == socauhoi+1:
         print("\nCảm ơn bạn đã sử dụng chương trình!\n")
  
